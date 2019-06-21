@@ -710,6 +710,11 @@ PrefabInstance:
       propertyPath: health
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 5025307546286618009, guid: ec4455da014a55141a98a54f24226f4f,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5025307547833266721, guid: ec4455da014a55141a98a54f24226f4f,
         type: 3}
       propertyPath: m_AnchorMax.x

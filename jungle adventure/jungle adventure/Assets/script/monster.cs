@@ -68,14 +68,14 @@ public class monster : MonoBehaviour
     void takeDamage(float damage)
     {
         health -= damage;
-        transform.position = new Vector3(enemy.GetComponent<Transform>().position.x + 1, enemy.GetComponent<Transform>().position.y, enemy.GetComponent<Transform>().position.z);
-
+        
         if (health <= 0)
         {
             anim.SetTrigger("dead");
             spawnMonster.score += 100;
             spawnMonster.coin += 10;
         }
+        transform.position = new Vector3(enemy.GetComponent<Transform>().position.x + 1, enemy.GetComponent<Transform>().position.y, enemy.GetComponent<Transform>().position.z);
         canWalk += stun;
         rb2d.velocity = new Vector2(25, 0);
         
